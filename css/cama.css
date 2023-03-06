@@ -1,0 +1,98 @@
+/*	Color palettes */
+#color1 {
+	color: #041C32;
+	color: #04293A;
+	color: #064663;
+	color: #ECB365;
+}
+#color2 {
+	color: #1C0C5B;
+	color: #3D2C8D;
+	color: #916BBF;
+	color: #C996CC;
+}
+#color3 {
+	color: #DDDDDD;
+	color: #222831;
+	color: #30475E;
+	color: #F05454;
+}
+#color4 {
+	color: #2C3333;
+	color: #395B64;
+	color: #A5C9CA;
+	color: #E7F6F2;
+}
+/*	END Color palettes */
+body {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 0 3vw;
+	padding-top: 3vw;
+}
+
+.sign {
+	background: #DDDDDD;
+	min-width: 40%;
+	max-width: 40%;
+	margin: auto;
+	border-radius: 2%;
+	overflow: hidden;
+	border: 1px solid #395B64;
+}
+
+.indtop {
+	padding: 1vw;
+	background: linear-gradient(to bottom right, #2C3333 0%, #395B64 100%);
+	color: white;
+	font-size: x-large;
+	margin: 0;
+	text-align: center;
+
+}
+.indbot {
+	padding: 1vw 0;
+	padding-right: 0.5vw;
+	text-align: right;
+	background: linear-gradient(to top left, #2C3333 0%, #395B64 100%);
+	color: white;
+	margin: 0;
+}
+
+.logform {
+	display: block;
+	text-align: center;
+	padding: 2vw 0vw;
+	margin: 0.1vw;
+}
+
+.logform form {
+	display: block;
+	margin: 0.2vw;
+}
+
+.logform input {
+	margin: 0.2vw 1vw;
+	padding: 0.4vw;
+}
+
+.msg {
+	padding: 2vw;
+	margin: 1vw;
+	min-height: 2vw;
+	text-align: center;
+}
+
+.makeforgot {
+	display: flex;
+	justify-content: space-between;
+}
+
+.extra {
+	margin: auto;
+}

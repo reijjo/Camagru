@@ -1,0 +1,273 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+header {
+	/*border: 1px solid black;*/
+	padding: 1vw;
+	text-align: center;
+	font-size: xx-large;
+	background: #395B64;
+	color: #DDDDDD;
+}
+
+body {
+	/*padding-bottom: 20vw;
+	margin-bottom: 20vw;*/
+	display: flex;
+	flex-direction: column;
+}
+
+/*	NAVBAR ALKAA	*/
+nav {
+	background: linear-gradient(to top, #222831 0%, #395B64 100%);
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+nav::after {
+	content: '';
+	clear: both;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+nav > ul > li {
+	float:left;
+	position: relative;
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: #DDDDDD;
+	padding: 1vw;
+}
+nav ul li:hover a {
+	background: #F05454;
+}
+nav ul ul {
+	position: absolute;
+	padding: 0;
+	min-width: 5vw;
+	display: none;
+	top: 100%;
+	left: 0;
+
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul ul li:hover a {
+	background: #30475E;
+}
+/*	NAVBAR LOPPUU	*/
+
+main {
+	padding-bottom: 20vw;
+	margin-bottom: 20vw;
+}
+
+.post {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	/*border: 2px solid black;*/
+	min-height: 50vw;
+	min-width: 40%;
+	max-width: 50%;
+	margin: 2vw auto;
+	overflow: auto;
+}
+
+form {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	min-height: 50vw;
+	min-width: 40%;
+	max-width: 50%;
+	margin: 2vw auto;
+	border-radius: 2%;
+	border: 1px solid #395B64;
+	overflow: hidden;
+
+}
+#color4 {
+	color: #2C3333;
+	color: #395B64;
+	color: #A5C9CA;
+	color: #E7F6F2;
+}
+
+.username {
+	/*border: 1px solid blue;*/
+	font-weight: bold;
+	padding: 0.5vw;
+	background: #395B64;
+	color: #DDDDDD;
+}
+
+.photo {
+	/*border: 1px solid purple;*/
+	flex: 6;
+	position: relative;
+	z-index: -1;
+	min-height: 30vw;
+
+}
+.photo img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+/* like section */
+/*.likedesc {*/
+
+
+.likehelp {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+button {
+	height: 100%;
+}
+#likecount {
+	flex: 1;
+	padding: 0.5vw 1vw;
+}
+.photodesc {
+	flex: 5;
+	/*border: solid 1px blue;*/
+	padding: 0.5vw 1vw;
+	overflow: scroll;
+}
+/* END like section */
+/* make comment */
+.makecomment {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #A5C9CA;
+	overflow: scroll;
+	flex: 1;
+
+}
+label {
+	flex: 1;
+	padding: 0.5vw 1vw;
+	flex-direction: row;
+	font-weight: bold;
+}
+input {
+	flex: 5;
+	/*height: fit-content;*/
+	height: 100%;
+	padding: 0.5vw 1vw;
+	width: 5vw;
+
+}
+.go {
+	flex: 0.1;
+	padding: 0.5vw 1vw;
+
+}
+/* END make comment */
+/* Comments start */
+.comments {
+	/*border: 1px solid green;*/
+	flex: 2;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background: #395B64;
+	color: #DDDDDD;
+
+}
+.onecomment {
+	/*border: 1px solid purple;*/
+	display: flex;
+	flex: 1;
+	padding: 0.1vw;
+	overflow: auto;
+	margin: 1vw;
+}
+.comdell {
+	text-align: right;
+	overflow: hidden;
+}
+
+.whosaid {
+	flex: 1;
+	padding: 0 0.2vw;
+	/*overflow:hidden;*/
+	font-weight: bold;
+	flex-grow: 2;
+
+}
+.whatsaid {
+	flex: 5;
+	/*border: 1px solid lightblue;*/
+	padding: 0 0.2vw;
+}
+.go {
+	margin: 0 0.5vw;
+
+}
+/* END Commets */
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1vw;
+	padding-right: 4vw;
+}
+
+.foot {
+	text-align: center;
+	background: #395B64;
+	color: #DDDDDD;
+}
+
+#comdel {
+	min-height: 2vh;
+	max-height: 4vh;
+}
+
+.realButton {
+	background: #395B64;
+	display: flex;
+	justify-content: center;
+}
+
+.deleteReal {
+	width: 5vw;
+	padding: 1vw;
+	font-weight: bold;
+	margin: 1vw;
+	min-width: 10vw;
+}
+
+.formlookalike {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	min-height: 50vw;
+	min-width: 40%;
+	max-width: 50%;
+	margin: 2vw auto;
+	border-radius: 2%;
+	border: 1px solid #395B64;
+	overflow: hidden;
+}
+
+.holdpagi {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 1vw;
+}
+.pagibuttons {
+	padding: 0.2vw;
+}

@@ -1,0 +1,34 @@
+h1 {
+	text-align: center;
+}
+div {
+	border: 1px solid black;
+}
+
+#main {
+	padding: 2vw;
+	width: 20vw;
+	min-width: 30%;
+	margin: auto;
+	background: linear-gradient(to bottom right, #3D2C8D 0%, #916BBF 100%);
+}
+
+.info {
+	text-align: center;
+	padding: 2vw;
+	background: #C996CC;
+	position: relative;
+	padding-bottom: 2vw;
+}
+
+.info input {
+	margin: 0.2vw;
+}
+
+
+span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 0.2vw;
+}

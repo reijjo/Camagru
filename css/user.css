@@ -1,0 +1,292 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+header {
+	/*border: 1px solid black;*/
+	padding: 1vw;
+	text-align: center;
+	font-size: xx-large;
+	background: #395B64;
+	color: #DDDDDD;
+}
+
+#color4 {
+	color: #2C3333;
+	color: #395B64;
+	color: #A5C9CA;
+	color: #E7F6F2;
+}
+
+body {
+/*	margin: 0;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 2vw;*/
+	display: flex;
+	flex-direction: column;
+}
+
+hr {
+	color: #395B64;
+}
+
+/*	NAVBAR ALKAA	*/
+nav {
+	background: linear-gradient(to top, #222831 0%, #395B64 100%);
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+nav::after {
+	content: '';
+	clear: both;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+nav > ul > li {
+	float:left;
+	position: relative;
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: #DDDDDD;
+	padding: 1vw;
+}
+nav ul li:hover a {
+	background: #F05454;
+}
+nav ul ul {
+	position: absolute;
+	padding: 0;
+	min-width: 5vw;
+	display: none;
+	top: 100%;
+	left: 0;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul ul li:hover a {
+	background: #30475E;
+}
+/*	NAVBAR LOPPUU	*/
+
+main {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	padding: 0 3vw;
+	padding-top: 1vw;
+	height: 60%;
+}
+
+/* PICTURE SITE */
+/* Stickers start */
+.stickers {
+	border: 2px solid #A5C9CA;
+	margin: 2vw 1vw;
+	flex: 1;
+	overflow: auto;
+}
+.stickers .sticker {
+	/*border: 1px solid #395B64;
+	margin: 1vw;
+	padding: 0.1vw;
+	justify-content: space-evenly;
+	min-height: 30%;
+	flex-direction: column;
+	display: flex;*/
+	border: 1px solid #395B64;
+	margin: 1vw;
+	padding: 0.1vw;
+	justify-content: space-evenly;
+	/*min-height: 30%;*/
+	flex-direction: column;
+	display: flex;
+	overflow: hidden;
+}
+.sticker div {
+	min-height: 3vw;
+	max-height: 4vw;
+	flex: 3;
+	margin: auto;
+	padding-bottom: 6vh;
+	overflow: hidden;
+}
+
+.sticker img {
+	/*max-height: 100vw;
+	max-width: 100%;
+	max-height: 30%;
+	object-fit: contain;
+	flex: 2;
+	z-index: -1;
+	min-width: 2vw;
+	min-height: 5vw;
+	align-items: center;
+	margin: auto;*/
+	flex: 2;
+	object-fit: contain;
+	max-width: 10vw;
+	max-height: 20vw;
+	overflow: hidden;
+	padding: 0.2vh;
+
+}
+
+.stickerstash {
+	/*overflow: hidden;
+	flex: 1;
+	align-items: center;*/
+	padding: 1vw;
+}
+
+#stickercanvas {
+	z-index: -1;
+	max-height: 5vw;
+	max-width: 5vw;
+}
+
+.sticker span {
+	justify-content: center;
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+	max-height: 4vh;
+	min-height: 2.5vh;
+}
+.stickbut {
+	margin: 0.1vw 0.5vw;
+	display: flex;
+	min-width: 0;
+	overflow: hidden;
+	padding: 0.2vw;
+	justify-content: center;
+	align-items: center;
+	min-height: 2.5vh;
+}
+
+/* END Stickers */
+
+
+#foto {
+	border: 2px solid #395B64;
+	margin: 2vw 1vw;
+	flex: 3;
+	position: relative;
+	z-index: -2;
+}
+#foto video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	z-index: -2;
+}
+#foto canvas {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	position: absolute;
+	z-index: -2;
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+	min-height: 30%;
+}
+
+#side {
+	border: 2px solid #A5C9CA;
+	margin: 2vw 1vw;
+	flex: 1;
+	overflow: auto;
+}
+#side .pic {
+	border: 1px solid #395B64;
+	margin: 1vw;
+	padding: 0.1vw;
+	justify-content: space-evenly;
+	/*min-height: 30%;*/
+	flex-direction: column;
+	display: flex;
+	overflow: hidden;
+}
+
+#side .pic button {
+	display: flex;
+	margin: 0.1vw 0.5vw;
+	overflow: hidden;
+	min-height: 4vh;
+}
+
+.sidepic {
+	max-height: 100vh;
+	min-height: 10vh;
+}
+
+.resize img {
+	max-width: 3vw;
+	max-height: 3vw;
+}
+.pic span {
+	justify-content: center;
+	display: flex;
+}
+.pic button {
+	flex: 0.2;
+	justify-content: center;
+	margin: 0.1vw 0.5vw;
+	max-height: 3vw;
+}
+
+.pic form {
+	flex: 0.2;
+	justify-content: center;
+	margin: 0.1vw 0.5vw;
+}
+
+.buttonsetc {
+	min-height: 5vw;
+	margin: 0 4vw;
+	margin-bottom: 1vw;
+}
+.buttonsetc span {
+	display: flex;
+	justify-content: center;
+}
+.buttonsetc button {
+	min-width: 5vw;
+	margin: 1vw 1vw;
+	padding: 1vw;
+	overflow: hidden;
+}
+
+.alreadyposted {
+	min-height: 3vh;
+}
+.alreadyposted img {
+	min-height: 30%;
+	max-height: 30%;
+}
+
+input {
+	display: none;
+}
+
+footer {
+	flex-shrink: 0;
+	padding: 1vw;
+}
+
+.foot {
+	text-align: right;
+	background: #395B64;
+	color: #DDDDDD;
+}
