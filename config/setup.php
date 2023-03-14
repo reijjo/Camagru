@@ -1,8 +1,10 @@
 <?php
 	$DB_NAME = 'camagru';
-	$DB_CONN = "mysql:host=localhost";
+	//$DB_CONN = "mysql:host=localhost";
+	$DB_CONN = "mysql:host=mysql-server";
 	$DB_USER = 'root';
-	$DB_PASSWORD = 'taitomer';
+	//$DB_PASSWORD = 'taitomer';
+	$DB_PASSWORD = 'password';
 
 	try {
 		// Try to connect server

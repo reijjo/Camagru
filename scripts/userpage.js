@@ -280,7 +280,7 @@ let uploading = false;
 		document.getElementById('fileinput').disabled = true;
 		uploading = false;
 		//window.location.href = 'http://localhost:8080/Camagru/userpage.php';
-		window.location.reload();
+		//window.location.reload();
 
 	}
 	function sleep(ms) {
@@ -297,7 +297,8 @@ let uploading = false;
 		var img_ch = element.parentNode.querySelector("img");
 		var src_ch = img_ch.getAttribute('src');
 		if (!src_ch)
-			window.location.href = 'http://localhost:8080/Camagru/userpage.php';
+			//window.location.href = 'http://localhost:8080/Camagru/userpage.php';
+			window.location.href = 'http://localhost:8080/userpage.php';
 		else {
 			var fd = new FormData();
 			fd.append("hidden_data", element.parentNode.querySelector("img").src);
@@ -307,7 +308,8 @@ let uploading = false;
 			xhr.open('POST', 'userpage.php', true);
 			xhr.send(fd);
 			setTimeout(function() {
-				window.location.href = 'http://localhost:8080/Camagru/makepost.php';
+				window.location.href = 'http://localhost:8080/makepost.php';
+				//window.location.href = 'http://localhost:8080/Camagru/makepost.php';
 			}, 500);
 		}
 	}
@@ -316,7 +318,8 @@ let uploading = false;
 		var img_ch = element.parentNode.querySelector("img");
 		var src_ch = img_ch.getAttribute('src');
 		if (!src_ch)
-			window.location.href = 'http://localhost:8080/Camagru/userpage.php';
+			window.location.href = 'http://localhost:8080/userpage.php';
+			//window.location.href = 'http://localhost:8080/Camagru/userpage.php';
 		else {
 			var fd = new FormData();
 			fd.append("hidden_data", element.parentNode.querySelector("img").src);

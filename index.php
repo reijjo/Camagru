@@ -6,7 +6,7 @@
 
 	session_start();
 
-	$id = $login = $msg = $action1 = '';
+	$id = $login = $msg = $action1 = $empty = '';
 
 	if (isset($_POST['submit'])) {
 		$username = check_data($_POST['login']);
@@ -56,7 +56,7 @@
 			<div class="indtop">Camagru</div>
 			<div class="logform">
 				<form method="post" action="index.php">
-					<input type="text" name="login" placeholder="Username" size="20" value="" autocomplete="off" pattern="[a-zA-Z0-9_]+$"> <br>
+					<input type="text" name="login" placeholder="Username" size="20" value="" autocomplete="off" pattern="[a-zA-Z0-9_]+$" > <br>
 					<input type="password" name="passwd" placeholder="Password" size="20" value="" autocomplete="off"> <br>
 					<input type="submit" name="submit" value="Login">
 				</form>
