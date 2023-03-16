@@ -22,3 +22,7 @@ or uploaded images.
 
 ## Update:
 First done by using Bitnami MAMP, but now uses Docker.
+
+## How to use:
+* 'docker-compose up' on terminal
+* Frontend: localhost:3000 || phpMyAdmin: localhost:8080
