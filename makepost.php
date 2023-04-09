@@ -84,11 +84,11 @@
 			var img_ch = document.getElementById('imgid');
 			var src_ch = img_ch.getAttribute('src');
 			if (!src_ch)
-				window.location.href = 'http://localhost:8080/userpage.php';
+				window.location.href = 'http://localhost:3000/userpage.php';
 				//window.location.href = 'http://localhost:8080/Camagru/userpage.php';
-			else if (src_ch.includes('data:image/png;base64,http://localhost:8080/'))
+			else if (src_ch.includes('data:image/png;base64,http://localhost:3000/'))
 			//else if (src_ch.includes('data:image/png;base64,http://localhost:8080/Camagru/'))
-				window.location.href = 'http://localhost:8080/useless.php';
+				window.location.href = 'http://localhost:3000/useless.php';
 				//window.location.href = 'http://localhost:8080/Camagru/useless.php';
 		}
 		window.onload = emptycheck;

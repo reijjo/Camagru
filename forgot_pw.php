@@ -28,7 +28,7 @@
 						$headers .= "Content-type: text/html;" . "\r\n";
 
 						$ms = "<html><body><div><div> Here you go, </div><br><br>";
-						$ms .= "<div style='padding-top: 8px;'><a href='http://localhost:8080/forgot_pw2.php?code=$code'>Click Here</a></div>";
+						$ms .= "<div style='padding-top: 8px;'><a href='http://localhost:3000/forgot_pw2.php?code=$code'>Click Here</a></div>";
 						//$ms .= "<div style='padding-top: 8px;'><a href='http://localhost:8080/Camagru/forgot_pw2.php?code=$code'>Click Here</a></div>";
 						$ms .= "</body></html>";
 

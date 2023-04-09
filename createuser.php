@@ -64,7 +64,7 @@
 
 					$ms = "<html><body><div><div> Dear $username, </div><br><br>";
 					$ms .= "<div style=\"padding-top: 8px;\"></div>";
-					$ms .= "<div style='padding-top:10px;'><a href='http://localhost:8080/email_verification.php?code=$activationcode'>Click Here</a></div>";
+					$ms .= "<div style='padding-top:10px;'><a href='http://localhost:3000/email_verification.php?code=$activationcode'>Click Here</a></div>";
 					//$ms .= "<div style='padding-top:10px;'><a href='http://localhost:8080/Camagru/email_verification.php?code=$activationcode'>Click Here</a></div>";
 					$ms .= "</body></html>";
 
